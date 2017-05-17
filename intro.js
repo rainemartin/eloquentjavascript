@@ -10,6 +10,9 @@ console.log("Introduction to JavaScript");
 // Function test area
 FizzBuzz();
 
+console.log("Test CountBs function with BBbbBBBb. Expected result: 5");
+console.log("CountBs result: " + CountBs("BBbbBBBb");
+
 
 // Write a function that prints 'fizz' if a number is divisible by three,
 // 'buzz' if it is divisible by 5, or 'fizzbuzz' if it's both.
@@ -35,3 +38,18 @@ function FizzBuzz()
 		}
 	}
 }
+
+// Write function to count Bs in a given string
+function CountBs(string)
+{
+	var count = 0;
+	for(var i = 0; i < string.length; i++)
+	{
+		if(string.charAt(i) == "B")
+		{
+			count++;
+		}
+	}
+	return count;
+}
+
