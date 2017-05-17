@@ -12,6 +12,9 @@ FizzBuzz();
 
 console.log("Test CountBs function with BBbbBBBb. Expected result: 5");
 console.log("CountBs result: " + CountBs("BBbbBBBb");
+			
+console.log("Test CountChar function with AeeABBaaA. Searching for A, expected result: 3");
+console.log("CountChar result: " + CountChar("AeeABBaaA");
 
 
 // Write a function that prints 'fizz' if a number is divisible by three,
@@ -42,15 +45,7 @@ function FizzBuzz()
 // Write function to count Bs in a given string
 function CountBs(string)
 {
-	var count = 0;
-	for(var i = 0; i < string.length; i++)
-	{
-		if(string.charAt(i) == "B")
-		{
-			count++;
-		}
-	}
-	return count;
+	return CountChar(string, "B");
 }
 
 // Write a function to count a given character in a given string
